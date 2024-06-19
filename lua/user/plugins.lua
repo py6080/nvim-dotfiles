@@ -72,6 +72,15 @@ return packer.startup(function(use)
   use "williamboman/mason-lspconfig.nvim" -- simple to use language server installer
   use 'nvimtools/none-ls.nvim' -- LSP diagnostics and code actions
 
+ -- DAP
+ use "mfussenegger/nvim-dap"
+ use "jay-babu/mason-nvim-dap.nvim" -- needs mason
+ use "nvim-neotest/nvim-nio"
+ use { 
+    "rcarriga/nvim-dap-ui", 
+    requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} 
+ }
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
 

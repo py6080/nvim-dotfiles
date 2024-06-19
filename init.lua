@@ -19,6 +19,7 @@ if not vim.g.vscode then
   require "user.autopairs"
   require "user.gitsigns"
   require "user.bufferlinep"
+  require "user.dap"
 
   vim.cmd "colorscheme tokyonight-night"
 end

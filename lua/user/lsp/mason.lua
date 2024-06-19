@@ -2,6 +2,8 @@
 local servers = {
   "lua_ls",
   "omnisharp",
+  "clangd",
+  "rust_analyzer",
 }
 
 local settings = {
