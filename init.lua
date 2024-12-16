@@ -20,6 +20,7 @@ if not vim.g.vscode then
   require "user.gitsigns"
   require "user.bufferlinep"
   require "user.dap"
+  require "user.lsp.settings.rustaceanvim"
 
   vim.cmd "colorscheme tokyonight-night"
 end

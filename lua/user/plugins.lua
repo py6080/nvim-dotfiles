@@ -95,6 +95,20 @@ return packer.startup(function(use)
   --gitsigns
   use "lewis6991/gitsigns.nvim"
 
+  --conjure
+  use {
+    'Olical/conjure',
+     ft = { "clojure", "fennel", "scheme" },
+  }
+
+  use {
+    'mrcjkb/rustaceanvim',
+    requires = { 'neovim/nvim-lspconfig' },
+    ft = { 'rust' },
+    version = '^5', -- Recommended
+  }
+
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
